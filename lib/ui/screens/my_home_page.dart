@@ -62,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget logView(int index) {
     return Container(
       color: (index == 0) ? pointer : white,
+      child: (index == 0) ? Center(child: Text("Conexion Page")) : Center(child: Text("Register page")),
     );
   }
 }
