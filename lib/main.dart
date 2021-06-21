@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:frontend_apps/ui/screens/screens.dart';
-import 'package:frontend_apps/ui/widgets/widgets.dart';
 
 void main() {
   runApp(MyApp());

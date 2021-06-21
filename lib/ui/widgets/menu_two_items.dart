@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../constants.dart';
+import 'package:frontend_apps/ui/widgets/my_painter.dart';
+import 'constants.dart';
 
 class Menu2Items extends StatelessWidget {
   final String item1, item2;
@@ -22,8 +23,12 @@ class Menu2Items extends StatelessWidget {
       decoration: BoxDecoration(
           color: pointer,
           borderRadius: BorderRadius.all(Radius.circular(25.0))),
-      child: Row(
-        children: [itemButton(item1), itemButton(item2)],
+      child: CustomPaint(
+        painter: MyPainter(pageController),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [itemButton(item1), itemButton(item2)],
+        ),
       ),
     );
   }
