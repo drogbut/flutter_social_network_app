@@ -12,3 +12,25 @@ const AssetImage logoImage = const AssetImage("assets/darkBee.png");
 const AssetImage eventImage = const AssetImage("assets/event.jpg");
 const AssetImage homeImage = const AssetImage("assets/home.jpg");
 const AssetImage profileImage = const AssetImage("assets/profile.jpg");
+
+// Icons
+Icon homeIcon = Icon(Icons.home);
+Icon friendsIcon = Icon(Icons.group);
+Icon notifIcon = Icon(Icons.notification_important);
+Icon accountIcon = Icon(Icons.account_circle);
+Icon writeIcon = Icon(Icons.border_color);
+Icon sendIcon = Icon(Icons.send);
+Icon cameraIcon = Icon(Icons.camera_enhance);
+Icon galleryIcon = Icon(Icons.photo_library);
+
+
+// Keys
+String keyUid = "uid";
+String keyName = "name";
+String keySurname = "surname";
+String keyFollowers = "followers";
+String keyImageUrl = "imageUrl";
+String keyFollowings = "followings";
+
+
+

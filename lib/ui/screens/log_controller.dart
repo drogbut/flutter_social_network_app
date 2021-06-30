@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_apps/bloc/fire_helper.dart';
 import 'package:frontend_apps/ui/widgets/alert_helper.dart';
 import 'package:frontend_apps/ui/widgets/constants.dart';
 import 'package:frontend_apps/ui/widgets/widgets.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key}) : super(key: key);
+class LogController extends StatefulWidget {
+  LogController({Key? key}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _LogControllerState createState() => _LogControllerState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _LogControllerState extends State<LogController> {
+
+  FireHelper fireHelper = FireHelper();
   late PageController _pageController;
   late TextEditingController _mail;
   late TextEditingController _pwd;
@@ -86,7 +89,8 @@ class _MyHomePageState extends State<MyHomePage> {
                ), left: 15.0, right: 15.0,),
           ),
           top: 15.0, bottom: 15.0,),
-          PaddingWith(widget: Card(
+          PaddingWith(
+            widget: Card(
             elevation: 7.5,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
             child: Container(
@@ -126,12 +130,14 @@ class _MyHomePageState extends State<MyHomePage> {
       if(_pwd.text != "") {
         if(exists) {
           // connection
-          AlertHelper().error(context, "Tout est ok");
+          fireHelper.signIn(_mail.text, _pwd.text);
+          print("Debug successful connection: { Mail = " +_mail.text + "pwd = " + _pwd.text + " }");
         }else{
            // verifier nom et premon puis inscription
           if(_name.text != "") {
             if(_surname.text != "") {
-              AlertHelper().error(context, "Tout est ok");
+              // creer un compte
+              fireHelper.createAccount(_name.text, _surname.text, _mail.text, _pwd.text);
             }else{
               // entrer votre prenom
               AlertHelper().error(context, "Entrer votre prenom");
