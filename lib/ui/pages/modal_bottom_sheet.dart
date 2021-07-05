@@ -5,6 +5,7 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:frontend_apps/bloc/fire_helper.dart';
 import 'package:frontend_apps/ui/widgets/constants.dart';
 import 'package:frontend_apps/ui/widgets/widgets.dart';
 import 'package:image_picker/image_picker.dart';
@@ -19,6 +20,7 @@ class _ModalBottomSheetState extends State<ModalBottomSheet> {
 
   late TextEditingController _textEditingController;
   File? imageTaken;
+  File imageHelper = File("");
   ImagePicker imagePicker = new ImagePicker();
 
 
@@ -72,13 +74,14 @@ class _ModalBottomSheetState extends State<ModalBottomSheet> {
                         color: baseAccent,
                          width: 150.0,
                            height: 100.0,
-                           child: (imageTaken == null) ? MyText("Aucune image", fontSize: 13.0,) : Image.file(imageTaken!)
+                           child: (imageTaken == null) ? Center(child: MyText("Aucune image", fontSize: 13.0,))
+                               : Image.file(imageTaken!, fit: BoxFit.cover,)
                   ), right: 25.0,
                     ),
                   ],
                 ),left: 50,
               ),
-              PaddingWith(widget: MyButtonGradiant(onPressed: (() => null),text: "Envoyer",))
+              PaddingWith(widget: MyButtonGradiant(onPressed: (() => sendToFirebase()),text: "Envoyer",))
             ],
           ),
         ),
@@ -91,11 +94,21 @@ class _ModalBottomSheetState extends State<ModalBottomSheet> {
     final pickedFile  = await imagePicker.getImage(source: ImageSource.camera, maxWidth: 500.0,  maxHeight: 500.0);
 
     setState(() {
-      if (pickedFile != null) {
         imageTaken = File(pickedFile.path);
-      } else {
-        print('No image selected.');
-      }
     });
+  }
+
+  sendToFirebase() {
+    //File helper = File("");
+    FocusScope.of(context).requestFocus(FocusNode());
+    print("Debug ImageTaken =" + imageTaken.toString());
+    if(imageTaken == null && (_textEditingController.text != "")){
+      FireHelper().addPost(myUser!.uid, _textEditingController.text, imageHelper);
+    }
+    else if(imageTaken != null && (_textEditingController.text != "")){
+      FireHelper().addPost(myUser!.uid, _textEditingController.text, imageTaken!);
+    } else{
+      print("Debug sendToFirebase: the text can't be an empty string. Nothing is sending to server");
+    }
   }
 }

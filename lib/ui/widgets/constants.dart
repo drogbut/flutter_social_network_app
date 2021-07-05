@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:frontend_apps/model/my_user.dart';
+
+// user global
+
+late MyUser? myUser;
 
 // colors
 const Color white = const Color(0xFFFFFFFF);
@@ -32,5 +37,8 @@ String keyFollowers = "followers";
 String keyImageUrl = "imageUrl";
 String keyFollowings = "followings";
 
-
-
+String keyText = "text";
+String keyPostId = "postID";
+String keyDate = "date";
+String keyComments = "comments";
+String keyLikes = "likes";

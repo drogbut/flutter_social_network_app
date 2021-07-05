@@ -22,7 +22,7 @@ class _MainAppControllerState extends State<MainAppController> {
 
   final _scaffoldKey = new GlobalKey<ScaffoldState>();
   late StreamSubscription subscription;
-  late MyUser myUser;
+  //late MyUser myUser;
 
   int index = 0;
 
@@ -32,7 +32,7 @@ class _MainAppControllerState extends State<MainAppController> {
         FireHelper().users.doc(widget.uid).snapshots().listen((document) {
           setState(() {
             myUser = MyUser(document);
-            print("[MainAppController] " + myUser.name);
+            print("[MainAppController] " + myUser!.name);
           });
         });
     super.initState();
@@ -82,11 +82,11 @@ class _MainAppControllerState extends State<MainAppController> {
 
   Widget showPage(int index) {
     switch(index) {
-      case 0 : return FeedPage(myUser: myUser);
-      case 1 : return UsersPage(myUser: myUser);
-      case 2 : return NotifPage(myUser: myUser);
-      case 3 : return ProfilPage(myUser: myUser);
-      default : return FeedPage(myUser: myUser);
+      case 0 : return FeedPage();
+      case 1 : return UsersPage();
+      case 2 : return NotifPage();
+      case 3 : return ProfilPage();
+      default : return FeedPage();
     }
   }
 
