@@ -4,7 +4,7 @@ Social network app for iOS and Android with flutter_bloc to implement login and 
 
 ## 1. Sign up 
 description 
-<table style="width:800px">
+<table>
     <tr>
         <td>Lesson Goals</td>
         <td><a href="https://www.youtube.com/watch?v=liEGSeD3Zt8">Learn more about Stack</a></td>
@@ -13,7 +13,7 @@ description
         <td>
             1. How to init the firebase? <br>
             2. How to draw a CustomPainter?   
-             /*****************************************************************************************/      
+            /**************************************************************************************/      
         </td>      
         <td>
             <img src="assets/sign_up.png" width="200">
@@ -24,7 +24,7 @@ description
 ## 2. Sign in 
 description 
 <table>
-    <tr  width="500px">
+    <tr>
         <td>Lesson Goals</td>
         <td><a href="https://www.youtube.com/watch?v=liEGSeD3Zt8">Learn more about Stack</a></td>
     </tr>
