@@ -21,7 +21,7 @@ description
 ## 2. Sign in 
 description 
 <table>
-    <tr>
+    <tr  width="500px">
         <td>Lesson Goals</td>
         <td><a href="https://www.youtube.com/watch?v=liEGSeD3Zt8">Learn more about Stack</a></td>
     </tr>
