@@ -11,13 +11,13 @@ description
     </tr>
       <tr>
         <td>
-        /*****************************************************************************************/
-          <li>
-            <ol>How to init the firebase?</ol>
-            <ol>How to draw a CustomPainter?</ol>
-          </li>        
+            1. How to init the firebase? <br>
+            2. How to draw a CustomPainter?         
         </td>
-        <td><img src="assets/sign_up.png" width="200"></td>
+        /*****************************************************************************************/
+        <td>
+            <img src="assets/sign_up.png" width="200">
+        </td>
       </tr>
 </table>
 
@@ -31,7 +31,8 @@ description
       <tr>
         <td>
           1. 
-          2.      
+          2.    
+         /*****************************************************************************************/  
         </td>
         <td><img src="assets/sign_in.png" width="200"></td>
       </tr>
