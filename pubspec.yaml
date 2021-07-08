@@ -51,6 +51,13 @@ flutter:
     - assets/event.jpg
     - assets/home.jpg
     - assets/profile.jpg
+    - assets/logo_large.png
+    - assets/logo_small.png
+    - assets/logo_small_icon_only.png
+    - assets/logo_small_icon_only_inverted.png
+    - assets/logo_white_large.png
+    - assets/sign_in.png
+    - assets/sign_up.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

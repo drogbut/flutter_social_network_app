@@ -13,7 +13,7 @@ const Color baseAccent = const Color(0xFF616161);
 const Color pointer = const Color(0xFFF44336);
 
 // images
-const AssetImage logoImage = const AssetImage("assets/darkBee.png");
+const AssetImage logoImage = const AssetImage("assets/logo_small.png");
 const AssetImage eventImage = const AssetImage("assets/event.jpg");
 const AssetImage homeImage = const AssetImage("assets/home.jpg");
 const AssetImage profileImage = const AssetImage("assets/profile.jpg");

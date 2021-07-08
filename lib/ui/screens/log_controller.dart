@@ -59,7 +59,7 @@ class _LogControllerState extends State<LogController> {
               child: SafeArea(
                 child: Column(
                   children: [
-                    PaddingWith(widget: Image(image: logoImage, height: 100,), top: 25.0,),
+                    PaddingWith(widget: Image(image: logoImage, height: 100,width: screenWidth*0.75,), top: 25.0,),
                     PaddingWith(widget: Menu2Items(item1: "Connexion", item2: "Creation",
                       pageController: _pageController,), top: 25.0, bottom: 25.0,),
                     Expanded(flex: 2, child: PageView(controller: _pageController, children: [logView(0), logView(2)],),

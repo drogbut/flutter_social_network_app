@@ -2,11 +2,45 @@
 
 Social network app for iOS and Android with flutter_bloc to implement login and posting using Firebase.
 
-## Features
+## 1. Sign up 
+description 
+<table>
+    <tr>
+        <td>Lesson Goals</td>
+        <td><a href="https://www.youtube.com/watch?v=liEGSeD3Zt8">Learn more about Stack</a></td>
+    </tr>
+      <tr>
+        <td>
+          1. How to init the firebase?
+          2. How to draw a CustomPainter?      
+        </td>
+        <td><img src="assets/sign_up.png" width="200"></td>
+      </tr>
+</table>
 
-- Sign up with name, surname, email and password
-- Sign in with email and password
-- sign out
+## 2. Sign in 
+description 
+<table>
+    <tr>
+        <td>Lesson Goals</td>
+        <td><a href="https://www.youtube.com/watch?v=liEGSeD3Zt8">Learn more about Stack</a></td>
+    </tr>
+      <tr>
+        <td>
+          1. 
+          2.      
+        </td>
+        <td><img src="assets/sign_in.png" width="200"></td>
+      </tr>
+</table>
+
+## Posting bloc
+
+- Add post page using firestore and storage
+- Add profile page 
+- Add user page with many users
+- Add news page
+- Add Notify page
 
 ## Getting Started
 
