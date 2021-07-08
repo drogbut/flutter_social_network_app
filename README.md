@@ -12,9 +12,9 @@ description
       <tr>
         <td>
             1. How to init the firebase? <br>
-            2. How to draw a CustomPainter?         
-        </td>
-        /*****************************************************************************************/
+            2. How to draw a CustomPainter?   
+             /*****************************************************************************************/      
+        </td>      
         <td>
             <img src="assets/sign_up.png" width="200">
         </td>
