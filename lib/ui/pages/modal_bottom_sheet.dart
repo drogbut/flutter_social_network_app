@@ -103,10 +103,10 @@ class _ModalBottomSheetState extends State<ModalBottomSheet> {
     FocusScope.of(context).requestFocus(FocusNode());
     print("Debug ImageTaken =" + imageTaken.toString());
     if(imageTaken == null && (_textEditingController.text != "")){
-      FireHelper().addPost(myUser!.uid, _textEditingController.text, imageHelper);
+      FireHelper().addPost(myUser!.uid!, _textEditingController.text, imageHelper);
     }
     else if(imageTaken != null && (_textEditingController.text != "")){
-      FireHelper().addPost(myUser!.uid, _textEditingController.text, imageTaken!);
+      FireHelper().addPost(myUser!.uid!, _textEditingController.text, imageTaken!);
     } else{
       print("Debug sendToFirebase: the text can't be an empty string. Nothing is sending to server");
     }

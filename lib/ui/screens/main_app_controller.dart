@@ -32,7 +32,7 @@ class _MainAppControllerState extends State<MainAppController> {
         FireHelper().users.doc(widget.uid).snapshots().listen((document) {
           setState(() {
             myUser = MyUser(document);
-            print("[MainAppController] " + myUser!.name);
+            print("[MainAppController] " + myUser!.name!);
           });
         });
     super.initState();

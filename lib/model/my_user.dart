@@ -5,14 +5,14 @@ import 'package:frontend_apps/ui/widgets/constants.dart';
 /// MyUser model
 class MyUser  {
 
-   late String uid;
-   late String name;
-   late String surname;
-   late String imageUrl;
-   late List<dynamic> followers;
-   late List<dynamic> followings;
-   late DocumentReference ref;
-   late String documentId;
+    String? uid;
+    String? name;
+    String? surname;
+    String? imageUrl;
+    List<dynamic>? followers;
+    List<dynamic>? followings;
+    DocumentReference? ref;
+    String? documentId;
 
   MyUser(DocumentSnapshot snapshot){
     ref = snapshot.reference;

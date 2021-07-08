@@ -4,7 +4,7 @@ import 'package:frontend_apps/model/my_user.dart';
 
 // user global
 
-late MyUser? myUser;
+ MyUser? myUser;
 
 // colors
 const Color white = const Color(0xFFFFFFFF);
