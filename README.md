@@ -12,7 +12,8 @@ Social network app for iOS and Android with flutter_bloc to implement login and 
         <td>
         description 
             1. How to init the firebase? <br>
-            2. How to draw a CustomPainter?   
+            2. How to draw a CustomPainter?  <br>
+             /****************************************************************************/ 
         </td>      
         <td>
             <img src="assets/sign_up.png" width="200">
