@@ -4,7 +4,7 @@ Social network app for iOS and Android with flutter_bloc to implement login and 
 
 ## 1. Sign up 
 description 
-<table style="width:600px">
+<table style="width:800px">
     <tr>
         <td>Lesson Goals</td>
         <td><a href="https://www.youtube.com/watch?v=liEGSeD3Zt8">Learn more about Stack</a></td>
