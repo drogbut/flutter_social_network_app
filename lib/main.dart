@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         if(snapshot.hasData){
           print("[MyApp] snapshot data: " + snapshot.data!.uid);
           var uid = snapshot.data!.uid;
-          return (!snapshot.hasData) ? LogController() : MainAppController(uid: uid);
+          return (snapshot.hasData) ? LogController() : MainAppController(uid: uid);
         }else if(snapshot.hasError){
           return CircularProgressIndicator(color: Colors.red,);
         }
