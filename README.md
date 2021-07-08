@@ -2,8 +2,7 @@
 
 Social network app for iOS and Android with flutter_bloc to implement login and posting using Firebase.
 
-## 1. Sign up 
-description 
+## 1. Sign up  
 <table>
     <tr>
         <td>Lesson Goals</td>
@@ -11,9 +10,9 @@ description
     </tr>
       <tr>
         <td>
+        description 
             1. How to init the firebase? <br>
             2. How to draw a CustomPainter?   
-            /************************************************************/
         </td>      
         <td>
             <img src="assets/sign_up.png" width="200">
@@ -22,7 +21,6 @@ description
 </table>
 
 ## 2. Sign in 
-description 
 <table>
     <tr>
         <td>Lesson Goals</td>
@@ -30,6 +28,7 @@ description
     </tr>
       <tr>
         <td>
+        description 
           1. <br>
           2.    
          /**********************************************************************************/
